@@ -1,6 +1,11 @@
 # 西兰卡普 AI 纹样生成与绣制辅助平台
 
-一个围绕西兰卡普纹样设计、格纹拆解、配色编号、路径辅助和教学导出的完整前端项目。
+一个围绕西兰卡普纹样设计、格纹拆解、配色编号、路径辅助和教学导出的完整项目仓库。
+
+## 仓库结构
+
+- 根目录：web 版应用，包含前端与本地开发 API
+- `desktop-app/`：桌面端应用，包含 Electron 壳层与 Tauri 工程目录
 
 ## 当前实现
 
@@ -47,6 +52,16 @@ npm run build
 npm run lint
 ```
 
+## 桌面端
+
+桌面端源码位于 `desktop-app/`，启动和打包说明见：
+
+```bash
+cd desktop-app
+npm install
+npm run build
+```
+
 ## 目录说明
 
 - `src/App.tsx`：主应用编排
@@ -55,4 +70,3 @@ npm run lint
 - `src/services/api.ts`：前端 API 调用
 - `functions`：生成任务服务与火山引擎接入逻辑
 - `vite.config.ts`：本地开发 API 中间件
-
